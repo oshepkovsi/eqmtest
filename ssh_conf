@@ -1,0 +1,25 @@
+AcceptEnv LANG LANGUAGE LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES
+AcceptEnv LC_IDENTIFICATION LC_ALL
+AcceptEnv LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT
+AuthorizedKeysFile /etc/ssh/keys/%u_keys
+ChallengeResponseAuthentication yes
+ClientAliveInterval 300
+GSSAPIAuthentication yes
+GSSAPICleanupCredentials yes
+LoginGraceTime 2m
+MaxAuthTries 6
+PasswordAuthentication no
+PermitEmptyPasswords no
+PermitRootLogin no
+Port 22
+Protocol 2
+PubkeyAuthentication yes
+RSAAuthentication yes
+StrictModes yes
+Subsystem sftp /usr/libexec/openssh/sftp-server
+SyslogFacility AUTHPRIV
+UseDNS no
+UsePAM yes
+UsePrivilegeSeparation yes
+X11Forwarding yes
+KerberosAuthentication no
